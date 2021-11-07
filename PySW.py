@@ -1,6 +1,7 @@
 import win32com.client
 from pandas import read_excel
 from logger import logger
+import os
 
 try:
     data = read_excel("table.xlsx")
@@ -36,5 +37,9 @@ for i, row in data.iterrows():
         logger.error(f"{row.x}, {row.y}")
         exit(-1)
     
-    
-longstatus = Part.SaveAs3(r'..details/detail', 0, 0)
+file_path = os.path.realpath(__file__).rsplit('\\', 1)[0]
+longstatus = Part.SaveAs3(f"{file_path}/1details/detail.sldprt", 0, 0)
+print(longstatus)
+
+if longstatus != 0:
+    logger.error("Проблема с адресом файла")
