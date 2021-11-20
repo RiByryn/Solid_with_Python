@@ -1,0 +1,11 @@
+# HOW TO: conda env create -f .\requirements\conda-env.yaml
+name: python_solid
+channels:
+  - defaults
+  - pypi
+dependencies:
+  - python=3.9
+  - pip
+  - requests
+  - pip:
+      - -e ..
