@@ -1,2 +1,206 @@
 2021-11-07 19:59:53,919 | pySW.py |             <module>() | 1.2, 33.6
 2021-11-07 20:23:09,859 | pySW.py |             <module>() | Проблема с адресом файла
+2021-11-14 20:17:52,244 | PySW.py |             <module>() | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+Traceback (most recent call last):
+  File "d:\Solid_with_Python\PySW.py", line 12, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 1233, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_openpyxl.py", line 521, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2021-11-14 20:19:33,965 | PySW.py |             <module>() | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+Traceback (most recent call last):
+  File "d:\Solid_with_Python\PySW.py", line 12, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 1233, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_openpyxl.py", line 521, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2021-11-14 20:23:50,491 | PySW.py |             <module>() | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+Traceback (most recent call last):
+  File "d:\Solid_with_Python\PySW.py", line 12, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 1233, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_openpyxl.py", line 521, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2021-11-14 20:38:13,356 | PySW.py |             <module>() | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+Traceback (most recent call last):
+  File "d:\Solid_with_Python\PySW.py", line 13, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 1233, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_openpyxl.py", line 521, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2021-11-14 20:41:45,258 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:44:06,866 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:44:29,843 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:44:37,633 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:44:45,492 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:44:56,912 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:46:31,160 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:46:43,400 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:47:29,503 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:52:07,974 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:52:32,352 | PySW.py |             <module>() | Can't dispatch SldWorks.Application
+2021-11-14 20:57:54,160 | PySW.py |             <module>() | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+Traceback (most recent call last):
+  File "d:\Solid_with_Python\PySW.py", line 15, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 1233, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_openpyxl.py", line 521, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2021-11-14 20:59:03,976 | PySW.py |             <module>() | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+Traceback (most recent call last):
+  File "d:\Solid_with_Python\PySW.py", line 15, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_base.py", line 1233, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\excel\_openpyxl.py", line 521, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\Ri\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2021-11-14 21:00:35,414 | PySW.py |             <module>() | Не можем создать элемент бобышка
+2021-11-14 21:01:12,721 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-15 22:15:52,634 | PySW.py |             <module>() | [Errno 2] No such file or directory: 'table.xlsx'
+Traceback (most recent call last):
+  File "d:\code\Solid_with_Python\src\python_solid\PySW.py", line 14, in <module>
+    data = read_excel("table.xlsx")
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\excel\_base.py", line 1191, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\excel\_base.py", line 1070, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'table.xlsx'
+2021-11-15 22:17:08,966 | PySW.py |             <module>() | [Errno 2] No such file or directory: '..\\..\\table_data\\table.xlsx'
+Traceback (most recent call last):
+  File "d:\code\Solid_with_Python\src\python_solid\PySW.py", line 14, in <module>
+    data = read_excel("..\\..\\table_data\\table.xlsx")
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\excel\_base.py", line 1191, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\excel\_base.py", line 1070, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\Ri\miniconda3\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '..\\..\\table_data\\table.xlsx'
+2021-11-15 22:18:09,372 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-15 22:22:35,495 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-15 22:23:09,447 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-15 22:44:31,889 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-15 22:47:56,206 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-17 20:39:07,003 | PySW.py |             <module>() | Проблема с адресом файла
+2021-11-17 22:57:07,937 | __main__.py |             <module>() | Start of main program
+2021-11-20 12:51:25,649 | __main__.py |             <module>() | Start of main program
+2021-11-20 12:51:32,013 | part_maker.py |            save_part() | Проблема с адресом файла
+2021-11-20 12:52:13,309 | __main__.py |             <module>() | Start of main program
+2021-11-20 13:18:57,616 | __main__.py |             <module>() | Start of main program
+2021-11-20 13:21:01,566 | __main__.py |             <module>() | Start of main program
+2021-11-20 13:26:19,816 | __main__.py |             <module>() | Start of main program
+2021-11-20 13:26:54,121 | __main__.py |             <module>() | Start of main program
+2021-11-20 13:27:19,946 | __main__.py |             <module>() | Start of main program
+2021-11-20 13:27:21,707 | part_maker.py |            save_part() | Проблема с адресом файла
+2021-11-20 13:29:51,333 | __main__.py |             <module>() | Start of main program
+2021-11-20 15:27:54,675 | __main__.py |             <module>() | Start of main program
+2021-11-20 15:27:54,688 | part_maker.py |             __init__() | [Errno 2] No such file or directory: '.\\table_data\\table.xslx'
+Traceback (most recent call last):
+  File "d:\code\solid_with_python\src\pysolid\part_maker.py", line 29, in __init__
+    self.data = read_excel(path_to_table)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1191, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1070, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '.\\table_data\\table.xslx'
+2021-11-20 15:30:19,602 | __main__.py |             <module>() | Start of main program
+2021-11-20 15:31:26,909 | __main__.py |             <module>() | Start of main program
+2021-11-20 15:31:32,375 | part_maker.py |             __init__() | [Errno 2] No such file or directory: 'table_data\\table.xslx'
+Traceback (most recent call last):
+  File "d:\code\solid_with_python\src\pysolid\part_maker.py", line 29, in __init__
+    self.data = read_excel(str(Path(path_to_table)))
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1191, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1070, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'table_data\\table.xslx'
+2021-11-20 15:32:29,719 | __main__.py |             <module>() | Start of main program
+2021-11-20 15:33:29,958 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:04:57,892 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:09:35,779 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:09:35,788 | part_maker.py |             __init__() | [Errno 2] No such file or directory: 'table_data\\table.xslx'
+Traceback (most recent call last):
+  File "d:\code\solid_with_python\src\pysolid\part_maker.py", line 29, in __init__
+    self.data = read_excel(str(Path(path_to_table)))
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1191, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1070, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'table_data\\table.xslx'
+2021-11-20 17:09:55,098 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:19:12,078 | __main__.py |             <module>() | Start of main program

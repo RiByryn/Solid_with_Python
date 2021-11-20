@@ -1,19 +1,31 @@
-import win32com.client
+from win32com import client as sw_client
 from pandas import read_excel
-from logger import logger
+from python_solid.logger import logger
 import os
+from pathlib import Path
+import subprocess
 
+from python_solid.const import PATH_TO_SOLID
+
+swProcess = subprocess.Popen(PATH_TO_SOLID)
 try:
-    data = read_excel("table.xlsx")
+    data = read_excel("table_data\\table.xlsx")
 except Exception as e:
     logger.exception(e)
     exit(-1)
 
 try:
-    swApp = win32com.client.Dispatch("SldWorks.Application.28" )
+    swApp = sw_client.Dispatch("SldWorks.Application")
 except Exception as e:
     logger.error("Can't dispatch SldWorks.Application")
-    exit(-1)
+    exit(0)
+
+swApp.newpart
+
+swSheetWidth = 0    
+swSheetHeight = 0    
+swApp.NewDocument("C:\ProgramData\SolidWorks\SOLIDWORKS 2021\templates\\gost-part.prtdot", 0, swSheetWidth, swSheetHeight)
+
 
 try:
     Part = swApp.ActiveDoc
@@ -23,7 +35,7 @@ except Exception as e:
 
 try:
     vSkLines = Part.SketchManager.CreateCornerRectangle(0, 0, 0, 0.1, 0.1, 0)
-    myFeature = Part.FeatureManager.FeatureExtrusion2(True, False, False, 0, 0, 0.01, 0.01, False, False, False, False, 1.74532925199433E-02, 1.74532925199433E-02,
+    myFeature = Part.FeatureManager.FeatureExtrusion2(True, False, False, 0, 0, 0.01, 0.01, False, False, False, False, 0, 0,
         False, False, False, False, True, True, True, 0, 0, False)
 except Exception as e:
     logger.error("Не можем создать элемент бобышка")
@@ -32,13 +44,18 @@ except Exception as e:
 for i, row in data.iterrows():
     try:
         skSegment = Part.SketchManager.CreateCircle(row.x*0.001, row.y*0.001, 0, row.x*0.001+0.005, row.y*0.001, 0)
-        myFeature = Part.FeatureManager.FeatureCut4(True, False, True, 0, 0, 0.01, 0.01, False, False, False, False, 1.74532925199433E-02, 1.74532925199433E-02, False, False, False, False, False, True, True, True, True, False, 0, 0, False, False)
+        myFeature = Part.FeatureManager.FeatureCut4(True, False, True, 0, 0, 0.01, 0.01, False, False, False, False, 0, 0, False, False, False, False, False, True, True, True, True, False, 0, 0, False, False)
     except Exception as e:
         logger.error(f"{row.x}, {row.y}")
         exit(-1)
-    
-file_path = os.path.realpath(__file__).rsplit('\\', 1)[0]
-longstatus = Part.SaveAs3(f"{file_path}/1details/detail.sldprt", 0, 0)
+
+name = "part2"    
+save_Path = Path.cwd().joinpath("details").joinpath(f"{name}.sldprt")
+
+
+
+
+longstatus = Part.SaveAs3(str(save_Path), 0, 0)
 print(longstatus)
 
 if longstatus != 0:
