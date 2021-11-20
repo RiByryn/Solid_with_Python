@@ -12,12 +12,14 @@ from pysolid.const import (
 )
 from pysolid.logger import logger
 from pysolid.part_maker import PartMaker
+from pathlib import Path
 
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="PySW")
 
     parser.add_argument("--path_to_table", dest="path_to_table", default=PATH_TO_TABLE)
+  
     parser.add_argument("--save_path", dest="save_path", default=SAVE_PATH)
     parser.add_argument("--part_name", dest="part_name", default=PART_NAME)
     parser.add_argument("--export_to_parasolid", dest="export_to_parasolid", action='store_true')

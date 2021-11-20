@@ -24,7 +24,7 @@ class PartMaker():
         part_height: float,
         cut_diameter: float
     ) -> None:
-        
+        # D:\code\Solid_with_Python\table_data\table.xlsx
         try:
             self.data = read_excel(str(Path(path_to_table)))
         except Exception as ex:

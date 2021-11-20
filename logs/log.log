@@ -185,3 +185,22 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'table_data\\table.xslx'
 2021-11-20 15:32:29,719 | __main__.py |             <module>() | Start of main program
 2021-11-20 15:33:29,958 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:04:57,892 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:09:35,779 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:09:35,788 | part_maker.py |             __init__() | [Errno 2] No such file or directory: 'table_data\\table.xslx'
+Traceback (most recent call last):
+  File "d:\code\solid_with_python\src\pysolid\part_maker.py", line 29, in __init__
+    self.data = read_excel(str(Path(path_to_table)))
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1191, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\excel\_base.py", line 1070, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\Ri\miniconda3\envs\python_solid\lib\site-packages\pandas\io\common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'table_data\\table.xslx'
+2021-11-20 17:09:55,098 | __main__.py |             <module>() | Start of main program
+2021-11-20 17:19:12,078 | __main__.py |             <module>() | Start of main program
