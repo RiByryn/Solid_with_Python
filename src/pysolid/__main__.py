@@ -13,22 +13,23 @@ from pysolid.const import (
 from pysolid.logger import logger
 from pysolid.part_maker import PartMaker
 from pathlib import Path
+from pysolid import __version__
 
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="PySW")
 
-    parser.add_argument("--path_to_table", dest="path_to_table", default=PATH_TO_TABLE)
+    parser.add_argument("--path_to_table", dest="path_to_table", default=PATH_TO_TABLE, help="Указать путь к таблице с данными, Если путь не указан, файл по умолчанию берется из папки table_data")
   
-    parser.add_argument("--save_path", dest="save_path", default=SAVE_PATH)
-    parser.add_argument("--part_name", dest="part_name", default=PART_NAME)
-    parser.add_argument("--export_to_parasolid", dest="export_to_parasolid", action='store_true')
+    parser.add_argument("--save_path", dest="save_path", default=SAVE_PATH, help="Указать путь к файлу. Если не указан, по умолчанию это папка Details")
+    parser.add_argument("--part_name", dest="part_name", default=PART_NAME, help="Указать название детали. По умолчанию \"part\"")
+    parser.add_argument("--export_to_parasolid", dest="export_to_parasolid", action='store_true', help="Экспортировать ли в parasolid?")
     
-    parser.add_argument("--height_of_boss", dest="height_of_boss", default=HEIGHT, type=float, help="Height in mm")
-    parser.add_argument("--diameter_of_cuts", dest="d_of_cuts", default=R_CUT_MM*2, type=float, help="Diameter of cuts in mm")
+    parser.add_argument("--height_of_boss", dest="height_of_boss", default=HEIGHT, type=float, help="Указать толщину бобышки в мм. По умолчанию 10 мм")
+    parser.add_argument("--diameter_of_cuts", dest="d_of_cuts", default=R_CUT_MM*2, type=float, help="Указать диаметр отверстий в мм. По умолчанию 1 мм")
     
-    # parser.add_argument("--help", dest="help")
-    # parser.add_argument("--version", dest="version")
+    parser.add_argument("--version", action="version",
+                    version="{version}".format(version=__version__))
     
     args = parser.parse_args()
     
@@ -48,6 +49,8 @@ if __name__ == "__main__":
         part_height=args.height_of_boss,
         cut_diameter=args.d_of_cuts
     )
+    
+
     
     part.make_part()
     part.save_part()
