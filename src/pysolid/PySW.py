@@ -1,3 +1,5 @@
+#Оставлено здесь для позора и истории
+
 from win32com import client as sw_client
 from pandas import read_excel
 from python_solid.logger import logger
