@@ -1,3 +1,0 @@
-openpyxl
-pypiwin32
-pandas
