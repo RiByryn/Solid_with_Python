@@ -1,4 +1,10 @@
-.vscode
 .vscode/*
-__pycache__/*
+!.vscode/launch.json
+
+*.egg-info/
+*.egg
 __pycache__/
+
+log/*
+
+details/*
