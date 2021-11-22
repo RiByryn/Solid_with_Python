@@ -18,9 +18,7 @@
             "request": "launch",
             "program": "src\\pysolid\\__main__.py",
             "console": "integratedTerminal",
-            "args": [
-                "--path_to_table", @"D:\code\Solid_with_Python\table_data\table.xslx",
-                "--save_path", ".\\details",
+            "args": [               
                 "--part_name", "test_part",
                 "--export_to_parasolid",
                 "--height_of_boss", "10",
