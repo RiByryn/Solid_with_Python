@@ -9,7 +9,7 @@ def get_property(prop, project):
     return result.group(1)
 
 setup(
-    name="python_solid",
+    name="pysolid",
     version=get_property('__version__', "src\pysolid"),
     description="Test module for creating part in SolidWorks from python",
     author="Mary Antonovich",
