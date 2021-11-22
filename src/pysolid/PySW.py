@@ -1,13 +1,13 @@
 #Оставлено здесь для позора и истории
 
-from win32com import client as sw_client
-from pandas import read_excel
-from python_solid.logger import logger
-import os
-from pathlib import Path
 import subprocess
 
-from python_solid.const import PATH_TO_SOLID
+from win32com import client as sw_client
+from pandas import read_excel
+from pathlib import Path
+
+from pysolid.logger import logger
+from pysolid.const import PATH_TO_SOLID
 
 swProcess = subprocess.Popen(PATH_TO_SOLID)
 try:
