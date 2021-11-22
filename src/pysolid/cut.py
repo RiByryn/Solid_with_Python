@@ -1,12 +1,8 @@
 from win32com import client as sw_client
-from pandas.core import frame
 from pandas.core.frame import DataFrame
 
-from pysolid import logger
 from pysolid.const import (
     MM_TO_M,
-    R_CUT_MM,
-    HEIGHT
 )
 from pysolid.point import Point
 
@@ -69,7 +65,7 @@ class Cut():
                     False
                 )
             except Exception as ex:
-                logger.error(f"{cut_point_center.x}, {cut_point_center.y}")
-                exit(-1)
+                print(f"Ошибка: Не могу создать вырез с координатами {cut_point_center.x}, {cut_point_center.y}")
+                exit(0)
         
     

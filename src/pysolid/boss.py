@@ -1,4 +1,3 @@
-from pysolid import logger
 from win32com import client as sw_client
 
 from pysolid.const import MM_TO_M
@@ -47,7 +46,7 @@ class Boss():
                 False
             )
         except Exception as ex:
-            logger.error("Не можем создать элемент бобышка")
-            exit(-1)
+            print("Ошибка: Не можем создать элемент бобышка")
+            exit(0)
 
 
