@@ -10,7 +10,7 @@
 `conda env create -f .\requirements\conda-env.yaml`
 
 Для использования:
-`pip install https://github.com/RiByryn/Solid_with_Python`
+`pip install "git+https://github.com/RiByryn/Solid_with_Python"`
 
 
 ## Что делать?
