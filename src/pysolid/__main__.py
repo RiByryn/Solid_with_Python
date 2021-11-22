@@ -1,5 +1,6 @@
 import subprocess
 import argparse
+import time
 from pysolid.const import (
     HEIGHT,
     PATH_TO_SOLID, 
@@ -74,11 +75,16 @@ if __name__ == "__main__":
     
     print("Start of main program")
     
+    
     try:
         swProcess = subprocess.Popen(PATH_TO_SOLID)
     except Exception as ex:
         print(str(ex))
         exit(0)
+    
+    print("Sleep for 10 seconds to load solid")
+
+    time.sleep(10)
     
     part = PartMaker(
         path_to_table=args.path_to_table,
