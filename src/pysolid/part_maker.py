@@ -37,7 +37,7 @@ class PartMaker():
             self.swApp = sw_client.Dispatch("SldWorks.Application")
         except Exception as e:
             print("Ошибка: Не могу найти процесс SldWorks.Application")
-            exit(0)
+            exit(-1)
         
         self.swApp.newpart
         swSheetWidth = 0    
