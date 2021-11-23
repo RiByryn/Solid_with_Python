@@ -12,6 +12,7 @@ class Boss():
     
     def create_boss(self) -> None:
         try:
+            self.part.SketchManager.AddToDB = True
             self.part.SketchManager.CreateCornerRectangle(
                 self.point1.x, 
                 self.point1.y, 
@@ -20,6 +21,9 @@ class Boss():
                 self.point2.y, 
                 self.point2.z
             )
+            self.part.SketchManager.AddToDB = False
+
+            
             self.part.FeatureManager.FeatureExtrusion2(
                 True, # SD: True for single ended, false for double ended
                 False, 
