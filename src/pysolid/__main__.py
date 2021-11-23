@@ -82,9 +82,9 @@ if __name__ == "__main__":
         print(str(ex))
         exit(0)
     
-    # print("Sleep for 10 seconds to load solid")
+    print("Sleep for 10 seconds to load solid")
 
-    # time.sleep(10)
+    time.sleep(10)
     
     part = PartMaker(
         path_to_table=args.path_to_table,
